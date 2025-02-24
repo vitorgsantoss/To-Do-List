@@ -54,5 +54,17 @@ function reloadTasks(){
     showTasks()
 }
 
+function changeButtonContent(){
+    const buttonAdd = document.querySelector('button.btn-task')
+    if (window.innerWidth < 700){
+        buttonAdd.innerText = 'Add'
+    }else{
+        buttonAdd.innerText = 'Adicionar'
+    }
+}
+
 reloadTasks()
+
+window.addEventListener('resize', changeButtonContent)
+window.addEventListener('load', changeButtonContent)
 button.addEventListener('click', addTask)

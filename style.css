@@ -8,6 +8,10 @@
 
 body{
     background: url(img/background.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: "Open Sans", serif;
 }
 
@@ -15,8 +19,11 @@ body{
     background: #d1d1d1;
     width: 500px;
     padding: 20px;
-    margin: 100px auto 0;
+    margin: 100px auto;
     border-radius: 10px;
+    overflow-wrap: break-word; /* Quebra palavras longas */
+    word-break: break-all;
+
 }
 
 h1{
@@ -64,8 +71,11 @@ h1{
     box-shadow: 1px 4px 10px rgba(0,0,0,0.2);
     width: 100%;
     margin-bottom: 20px;
-    height: 50px;
-    padding: 0 15px;
+    min-height: 50px;
+    line-height: 2rem;
+    hyphens: auto;
+    padding: 5px 10px;
+    white-space: normal;
 }
 
 img{
@@ -82,4 +92,26 @@ img{
 .done{
     background: #8fac55;
     text-decoration: line-through;
+}
+
+@media (max-width: 700px){
+    .container{
+        width: 90%;
+    }
+    h1{
+        font-size: 32px;
+    }
+    .input-task{
+        width: 75%;
+    }
+    .btn-task{
+        width: auto;
+    }
+    .task img{
+        opacity: 1;
+        margin: 5px;
+        width: 17px;
+        height: 17px;
+
+    }
 }

@@ -15,8 +15,6 @@ Este é um aplicativo de lista de tarefas (To-Do List) desenvolvido para ajudar 
 - HTML
 
 ## Como Executar o Projeto
-### Requisitos
-Nenhuma dependência necessária.
 
 ### Instalação
 1. Clone este repositório:
